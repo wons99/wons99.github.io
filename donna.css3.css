@@ -1,0 +1,130 @@
+/*
+Together-1
+*/
+
+ /*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+ .fa,
+ .fas,
+ .far,
+ .fal,
+ .fad,
+ .fab 
+
+.fa-door-open:before {
+  content: "\f52b"; }
+.fa-wix:before {
+  content: "\f5cf"; }
+.fa-linkedin:before {
+  content: "\f08c"; }
+.fa-imdb:before {
+  content: "\f2d8"; }
+.fa-file:before {
+  content: "\f15b"; }
+.fa-address-card:before {
+  content: "\f2bb"; }
+  
+  .button{
+    background-color:#253da1;
+    border: none;
+    color:#ffffff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    border:18px;
+  }
+ 
+  .button::-webkit-input-placeholder {
+    color:#ffffff;
+  }
+
+  .button-view-logo {
+    vertical-align: middle;
+  }
+  .button:hover{
+color:yellow;
+background-color: red;
+  }
+
+  .nav{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    color: #000000;
+  }
+.icon{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+}
+
+header{
+  background:#666666;
+  text-align:center;
+  padding:15px;
+}
+
+header,footer{
+  background: #666666;
+  background:-moz-linear-gradient(top, #4035c5 0%, #7cd1f0 100%);
+background:-webkit-linear-gradiant(#4035c5 0%, #7cd1f0 100%);
+background:-o-linear-gradient(#4035c5 0%, #7cd1f0 100%);
+background: linear-gradient(#4035c5 0%, #7cd1f0 100%);
+}
+
+h1{
+  color:#ffffff;
+}
+
+h2{
+  color:#ffffff;
+}
+
+h3{
+  color:#ffffff;
+}
+
+img{
+  width:60px;
+  margin-right:20px;
+}
+
+#football {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#football td, #football th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#football tr:nth-child(even){background-color: #f2f2f2;}
+
+#football tr:hover {background-color: #ddd;}
+
+#football th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+  background:blue;
+  background:-moz-linear-gradient(top, #4035c5 0%, #7cd1f0 100%);
+  background:-webkit-linear-gradiant(#4035c5 0%, #7cd1f0 100%);
+  background:-o-linear-gradient(#4035c5 0%, #7cd1f0 100%);
+  background: linear-gradient(#4035c5 0%, #7cd1f0 100%);
+}
+
+footer{
+  clear:both;
+  color:#ffffff;
+  font-style:italic;
+}
