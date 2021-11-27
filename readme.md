@@ -9,7 +9,7 @@ Checks if files needs to be "staged"
 ```shell
 git add .
 ```
-Adds ("stages") all files
+Adds ("stages") all files.
 
 
 ```shell
