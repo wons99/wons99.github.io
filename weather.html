@@ -1,0 +1,62 @@
+<html>
+
+<body>
+  <a href="https://www.donnakuczynski.com/">&lt;Back to portfolio</a>
+  <label>City name: </label>
+  <input type="text" id="city-name-input" />
+  <button id="submit">Get weather!</button>
+  <section id="weather-data">
+  </section>
+</body>
+
+</html>
+
+<script>
+  const apiKey = 'fda08e6f2262676224c6e924ecaec1fe';
+
+  /* Runs on click */
+  async function onButtonClick() {
+    const middleName = 'Thomas';
+    const fullName = 'Alex ' + middleName + ' Lanthier';
+
+    const weatherButton = document.getElementById('submit');
+    weatherButton.style.background = 'lightblue';
+
+    // Step 1: Get the input box
+    const cityNameInput = document.getElementById('city-name-input');
+
+    // Step 2: Get the value that's inside the box
+    const cityName = cityNameInput.value;
+
+    const url = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + cityName + "&appid=" + apiKey;
+
+    /* Fetch API */
+    const apiResponse = await fetch(url);
+    const cityData = await apiResponse.json();
+
+    /* Injecting HTML */
+    const weatherCard = document.createElement('div');
+    weatherCard.innerHTML = "<h2>" + cityData.name + "</h2>";
+    weatherCard.innerHTML = weatherCard.innerHTML + "<p>Current temperature: " + cityData.main.temp + "</p>";
+    weatherCard.classList.add('card')
+
+    const weatherDataSection = document.getElementById('weather-data');
+    weatherDataSection.appendChild(weatherCard);
+  }
+
+  /* Runs on page load */
+  const weatherButton = document.getElementById('submit');
+  weatherButton.addEventListener('click', onButtonClick);
+</script>
+
+<style>
+  .card {
+    /* Using flexbox, learn more at: https://flexboxfroggy.com/ https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+</style>
