@@ -5,6 +5,11 @@ git status
 ```
 Checks if files needs to be "staged"
 
+```shell
+git pull origin master
+```
+pulls files from remote repo
+
 
 ```shell
 git add .
